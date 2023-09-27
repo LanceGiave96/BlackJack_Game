@@ -1,0 +1,36 @@
+body 
+{
+    background-image: url("sfondo.png");
+    background-size: cover;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+h1 
+{
+    color: goldenrod;
+}
+
+#Section_1
+{
+    margin-top: 60px;
+}
+
+#message-el
+{
+    font-style: italic;
+}
+
+#StartButton
+{
+    background-color: goldenrod;
+    color: #016f32;
+    font-weight: bold;
+    font-size: 15;
+    width: 150px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 2px;
+}
