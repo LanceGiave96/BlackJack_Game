@@ -36,3 +36,17 @@ button
     border: none;
     border-radius: 2px;
 }
+
+#cards-Section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card_Image
+{
+    width: 80px;
+    height: 120px;
+    margin: 0 5px;
+}
