@@ -35,7 +35,6 @@ function startGame()
         
         chips-= 10
         playerEl.textContent = player.name + ": €" + chips
-
         isAlive = true
         let firstCard = getRandomCard()
         let secondCard = getRandomCard()
