@@ -23,12 +23,14 @@ h1
     font-style: italic;
 }
 
-#StartButton
+button
 {
+    display: block;
+    margin: 0px auto 5px auto;
     background-color: goldenrod;
     color: #016f32;
     font-weight: bold;
-    font-size: 15;
+    font-size: 17px;
     width: 150px;
     padding: 5px 10px;
     border: none;
