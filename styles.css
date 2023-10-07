@@ -4,12 +4,14 @@ body
     background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
+    font-size: 30px;
     text-align: center;
     color: white;
 }
 
 h1 
 {
+    font-size: 40px;
     color: goldenrod;
 }
 
@@ -30,11 +32,16 @@ button
     background-color: goldenrod;
     color: #016f32;
     font-weight: bold;
-    font-size: 17px;
-    width: 150px;
+    font-size: 30px;
+    width: 300px;
     padding: 5px 10px;
     border: none;
     border-radius: 2px;
+}
+
+button:hover
+{
+    box-shadow: 5px 5px 3px black;
 }
 
 #cards-Section
@@ -46,7 +53,7 @@ button
 
 .card_Image
 {
-    width: 80px;
-    height: 120px;
+    width: 140px;
+    height: 180px;
     margin: 0 5px;
 }
