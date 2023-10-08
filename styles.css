@@ -4,18 +4,18 @@ body
     background-size: cover;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     color: white;
     width: 100%;
     height: 100%;
     position: absolute;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 h1 
 {
-    font-size: 40px;
+    font-size: 60px;
     color: goldenrod;
 }
 
@@ -27,6 +27,7 @@ h1
     width: 100%;
     height: 100%;
     position: absolute;
+    padding: 10px 0px;
 }
 
 #message-el
@@ -37,13 +38,14 @@ h1
 button
 {
     display: block;
-    margin: 0px auto 5px auto;
+    margin: 0px auto 20px auto;
     background-color: goldenrod;
     color: #016f32;
     font-weight: bold;
-    font-size: 30px;
-    width: 300px;
-    padding: 5px 10px;
+    font-size: 40px;
+    width: 500px;
+    height: 60;
+    padding: 10px 15px;
     border: none;
     border-radius: 2px;
 }
