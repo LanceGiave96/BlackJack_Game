@@ -1,8 +1,12 @@
+
+//Object player
 let player = 
 {
     name: "Enrico",
     chips: 150,
 }
+
+//Initialize variables
 let cards = []
 let sum = 0
 let hasBlackJack = false
@@ -18,6 +22,85 @@ let cards_Section = document.getElementById("cards-Section")
 cards_Section.innerHTML = '<div id="cards-Section"></div>'
 let inner_Cards_Section = ""
 
+//Function to start/restart game
+function startGame()
+{   
+    if(chips >= 10)
+    {
+
+        cards_Section.innerHTML = '<div id="cards-Section"></div>'
+        inner_Cards_Section = ""
+
+        chips-= 10
+        playerEl.textContent = player.name + ": €" + chips
+        isAlive = true
+        hasBlackJack = false
+        sum = 0
+        let firstCard = getRandomCard()
+        sum = firstCard
+        
+        //Start with one card
+        cards = []
+        cards.push(firstCard)
+
+        //Start with two cards
+        //let secondCard = getRandomCard()
+        //sum += secondCard
+        //cards = [firstCard,secondCard]
+
+        renderGame()
+
+    }
+
+}
+
+//Funciton to decide if the player is still alive
+function renderGame()
+{
+
+    cardEl.textContent = "Cards: "
+    for(let count=0; count < cards.length; count++)
+    {
+        cardEl.textContent += cards[count] + " "
+    }
+
+    if(sum <= 20)
+    {
+        message = "Do you want to draw a new card?"
+    }
+    else if(sum === 21)
+    {
+        hasBlackJack = true
+        message = "You got BlackJack!"
+    }
+    else
+    {
+        message = "You are out of the game!"
+        isAlive = false
+    }
+
+    sumEl.textContent = "Sum: " + sum
+    messageEl.textContent = message
+
+}
+
+//Get a new card and assign variables
+function newCard()
+{
+    if(isAlive === true && hasBlackJack === false)
+    {
+
+        let card = getRandomCard()
+        sum += card
+
+        cards.push(card)
+        renderGame()
+        
+    }
+
+}
+
+//Function called to throw a random card
 function getRandomCard()
 {   
     let randomNumber = Math.floor(Math.random() * 13) + 1
@@ -61,74 +144,5 @@ function getRandomCard()
 
     else
         return randomNumber
-
-}
-
-function startGame()
-{   
-    if(chips >= 10)
-    {
-
-        cards_Section.innerHTML = '<div id="cards-Section"></div>'
-        inner_Cards_Section = ""
-
-        chips-= 10
-        playerEl.textContent = player.name + ": €" + chips
-        isAlive = true
-        hasBlackJack = false
-        sum = 0
-        let firstCard = getRandomCard()
-        sum = firstCard
-        let secondCard = getRandomCard()
-        sum += secondCard
-        cards = [firstCard,secondCard]
-
-        renderGame()
-
-    }
-
-}
-
-function renderGame()
-{
-
-    cardEl.textContent = "Cards: "
-    for(let count=0; count < cards.length; count++)
-    {
-        cardEl.textContent += cards[count] + " "
-    }
-
-    if(sum <= 20)
-    {
-        message = "Do you want to draw a new card?"
-    }
-    else if(sum === 21)
-    {
-        hasBlackJack = true
-        message = "You got BlackJack!"
-    }
-    else
-    {
-        message = "You are out of the game!"
-        isAlive = false
-    }
-
-    sumEl.textContent = "Sum: " + sum
-    messageEl.textContent = message
-
-}
-
-function newCard()
-{
-    if(isAlive === true && hasBlackJack === false)
-    {
-
-        let card = getRandomCard()
-        sum += card
-
-        cards.push(card)
-        renderGame()
-        
-    }
 
 }
