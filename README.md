@@ -4,5 +4,5 @@ This web project simulates the game of ***BlackJack***. It's made from scratch b
 The cool thing is that the app simulates a real deck that throws and remove cards. 
 When deck is empty, cards are re-shuffled (a simple alert notifies the user)
 
-## With this app you can practice your card counting skills without getting arrested! (I hope...)
+**With this app you can practice your card counting skills without getting arrested! (I hope...)**
 [See on this link and try to yourself!](https://monumental-cuchufli-cbe520.netlify.app/)
