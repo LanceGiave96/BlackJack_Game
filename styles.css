@@ -26,7 +26,7 @@ h1
     max-height: 680px;
 }
 
-#message-el
+.message-el
 {
     font-style: italic;
     margin: 0px;
@@ -45,6 +45,11 @@ button
     padding: 10px 15px;
     border: none;
     border-radius: 2px;
+}
+
+#btn-new-card
+{
+    display: none;
 }
 
 button:hover
