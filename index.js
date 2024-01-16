@@ -126,7 +126,6 @@ function getRandomCard()
     let value_card = actual_bunch[randomNumber].value
     if(value_card === 1 && 11 + sum <= 21)
         value_card = 11
-    console.log("Number: " + randomNumber + " path: " + image_Path + " value: " + value_card + " sum: " + sum)
 
     //Remove card from bunch
     actual_bunch.splice(randomNumber,1)
