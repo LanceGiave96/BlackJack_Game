@@ -53,9 +53,14 @@ button
     display: none;
 }
 
-button:hover
-{
-    box-shadow: 5px 5px 3px black;
+/*Hovering not in mobile devices*/
+@media (hover: hover){
+
+    button:hover
+    {
+        box-shadow: 5px 5px 3px black;
+    }
+
 }
 
 #cards-Section
