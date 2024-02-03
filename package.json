@@ -1,0 +1,27 @@
+{
+  "name": "package.json",
+  "version": "1.0.0",
+  "description": "This web project simulates the game of ***BlackJack***. It's made from scratch by simply using ***Javascript*** and a little of ***CSS*** for styling ​💻.\r The cool thing is that the app simulates a real deck that throws and remove cards 🤩​. \r When deck is empty, cards are re-shuffled (a simple alert notifies the user 🧑‍💻​)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LanceGiave96/BlackJack_Game.git"
+  },
+  "keywords": [
+    "BlackJack",
+    "Game",
+    "Enjoy"
+  ],
+  "author": "LanceGiave96",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LanceGiave96/BlackJack_Game/issues"
+  },
+  "homepage": "https://github.com/LanceGiave96/BlackJack_Game#readme",
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}
